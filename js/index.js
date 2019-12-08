@@ -15,6 +15,7 @@ navLogo.addEventListener('click', (event) => {
     event.target.textContent = 'Really Fun Bus';
 })
 
+
 let text = document.querySelector('body');
 text.addEventListener('keydown', (event) => {
     event.target.style.color = 'grey';
@@ -42,4 +43,13 @@ document.querySelector('.text-content h2').addEventListener('click', (event) => 
 let mapPic = document.querySelector('.img-content img');
 mapPic.addEventListener('dblclick', (event) => {
     event.target.style.transform = 'scale(1.2)';
+})
+
+let html = document.querySelector('html');
+window.addEventListener('resize', (event) => {
+    html.style.fontSize = "80%";
+})
+
+html.addEventListener('keyup', (event) => {
+    event.target.style.color = 'red';
 })
