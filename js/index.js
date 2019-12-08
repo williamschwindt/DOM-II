@@ -53,3 +53,7 @@ window.addEventListener('resize', (event) => {
 html.addEventListener('keyup', (event) => {
     event.target.style.color = 'red';
 })
+
+document.querySelectorAll('.nav-link').forEach(el => el.addEventListener("click", function(event){
+    event.preventDefault()
+  }));
